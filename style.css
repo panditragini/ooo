@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    height: 100%;
+    font-family: 'Segoe UI',sans-serif;
+    overflow: hidden;
+}
+.hero{
+    height: 100vh;
+    background-color:pink;
+    background-size: 400% 400%;
+    animation: bgMove 15s ease infinite;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40; 
+    @keyframes bgMove {
+        0%{
+            background-position:0% 50%;}
+            100%{ background-position:0%50%}
+    }
+nav Ul{
+    display :flex;
+    list-style: none;{
+}
+nav li{
+    margain: left 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color0.3s;
+}
+nav: hover{
+    color: #000;
+}
+.content{
+    text-align:center;
+    animation: fadelnup 1.5ease-out;
+}
+@keyframes fadelnup{
+    from{
+        opacity: 0;
+        transform: translate3d(0);
+    }
+    }
+.btn{
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #432869;
+    color: #1e3c72;
+    border: none;
+    border: radius:5px;
+text-decoration:none;
+font-weight:bold;
+transition:transform 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
